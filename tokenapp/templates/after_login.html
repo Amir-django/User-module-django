@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<h1>Welcome {{user.username}}</h1>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card card-body">
+            <img src="{{user.userprofileinfo.profile_pic.url}}" style="width: 200px; height: 200px;">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
